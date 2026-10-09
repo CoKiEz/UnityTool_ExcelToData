@@ -1,0 +1,7 @@
+{
+  "name": "ExcelDataTool.Editor",
+  "rootNamespace": "ExcelDataTool.Editor",
+  "references": [],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

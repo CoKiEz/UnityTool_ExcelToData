@@ -1,0 +1,23 @@
+阶段一验证摘要（2026-10-09，等待用户验收）
+Unity: 6000.3.17f1，完整工程副本 .utmp/u，batchmode + nographics。
+PASS: Unity 编译；EditMode 42/42，0失败、0跳过，进程退出0。
+PASS: 下列交付功能文件与通过测试的副本逐字节一致。
+Assets/ExcelDataTool/Editor/ExcelDataTool.Editor.asmdef
+Assets/ExcelDataTool/ExportRecords/Enemy.export.json
+Assets/ExcelDataTool/Tests/Editor/ExcelDataTool.Editor.Tests.asmdef
+Assets/ExcelDataTool/Tests/Editor/StageOneTests.cs
+Assets/ExcelDataTool/Editor/Core/TableExporter.cs
+Assets/ExcelDataTool/Editor/Core/TableValidator.cs
+Assets/ExcelDataTool/Editor/Core/WorkbookModels.cs
+Assets/ExcelDataTool/Editor/Core/XlsxWorkbookReader.cs
+Assets/ExcelDataTool/Editor/UI/ExcelDataToolWindow.cs
+Assets/GameData/Excel/Enemy.xlsx
+Assets/GameData/Generated/Code/EnemyRow.cs
+Assets/GameData/Generated/Code/EnemyTable.cs
+Assets/GameData/Generated/Json/Enemy.json
+PASS: Packages 与 ProjectSettings 文件均与实际测试副本一致。
+PASS: 新增 Assets 资源及目录均有 .meta。
+PASS: Enemy.xlsx 未被测试修改，SHA-256=71bdc61530152495836342cae7ba488e41db53aba89846fc0a735842fc0a8d6b
+PASS: 三个生成文件均匹配所有权记录。
+NOT RUN: 当前可见 Unity 窗口的手工验收及实际表格软件编辑。
+原始 NUnit XML: StageOne-EditMode.xml

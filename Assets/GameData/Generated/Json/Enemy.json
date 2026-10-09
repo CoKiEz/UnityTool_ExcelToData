@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "id": 1001,
+      "name": "哥布林",
+      "maxHealth": 120,
+      "attack": 15,
+      "moveSpeed": 3.5,
+      "isBoss": false
+    },
+    {
+      "id": 1002,
+      "name": "骷髅兵",
+      "maxHealth": 150,
+      "attack": 20,
+      "moveSpeed": 2.8,
+      "isBoss": false
+    },
+    {
+      "id": 2001,
+      "name": "机械巨像",
+      "maxHealth": 2500,
+      "attack": 80,
+      "moveSpeed": 1.2,
+      "isBoss": true
+    }
+  ]
+}

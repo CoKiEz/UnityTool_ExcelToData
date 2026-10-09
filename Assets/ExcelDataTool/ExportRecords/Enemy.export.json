@@ -1,0 +1,19 @@
+{
+  "tool": "ExcelDataTool.ExportRecord.v1",
+  "table": "Enemy",
+  "source": "ASSETS/GAMEDATA/EXCEL/ENEMY.XLSX",
+  "files": [
+    {
+      "path": "Assets/GameData/Generated/Json/Enemy.json",
+      "sha256": "3f28a0cc50981c0ddb64f37f8545a344040863f2851954b8495f9b11e4bf4d7e"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/EnemyRow.cs",
+      "sha256": "1929aced89d21d443bd38fc6eb0c65b5a16af36b75f80ae7c4678a2bbde35913"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/EnemyTable.cs",
+      "sha256": "f9e276d466abeeee851dfa3d74a30cbf8c0f84fe0d11d10627533d3577300dc4"
+    }
+  ]
+}
