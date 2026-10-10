@@ -36,6 +36,8 @@ namespace ExcelDataTool.Tests.Editor
             Directory.CreateDirectory(inputDirectory);
             workbookPath = Path.Combine(inputDirectory, "Enemy.xlsx");
             File.Copy(Path.Combine(Application.dataPath, "GameData/Excel/Enemy.xlsx"), workbookPath);
+            // 用户可在验收时修改交付源表；只在本测试副本恢复固定初值，使 100→120 回归可重复运行。
+            RewriteXml("xl/worksheets/sheet1.xml", document => SetXmlCell(document, "C4", "100", "n"));
         }
 
         /// <summary>在确认路径属于本次测试后，删除本测试创建的临时目录。</summary>
@@ -255,22 +257,37 @@ namespace ExcelDataTool.Tests.Editor
         [Test]
         public void SharedRichTextStrings_AreReadInOrder()
         {
-            var strings = new XDocument(new XElement(SpreadsheetNamespace + "sst",
-                new XAttribute("count", 1), new XAttribute("uniqueCount", 1),
-                new XElement(SpreadsheetNamespace + "si",
-                    new XElement(SpreadsheetNamespace + "r", new XElement(SpreadsheetNamespace + "t", "共用")),
-                    new XElement(SpreadsheetNamespace + "r", new XElement(SpreadsheetNamespace + "t", "中文")))));
-            RewriteXml("xl/worksheets/sheet1.xml", document => SetXmlCell(document, "B4", "0", "s"),
+            // Excel/WPS 保存后可能已有共享字符串，追加测试值以保留其他单元格的索引。
+            XDocument strings;
+            using (var archive = ZipFile.OpenRead(workbookPath))
+            {
+                ZipArchiveEntry existing = archive.GetEntry("xl/sharedStrings.xml");
+                if (existing == null) strings = new XDocument(new XElement(SpreadsheetNamespace + "sst"));
+                else using (Stream stream = existing.Open()) strings = XDocument.Load(stream);
+            }
+            int index = strings.Root.Elements(SpreadsheetNamespace + "si").Count();
+            strings.Root.Add(new XElement(SpreadsheetNamespace + "si",
+                new XElement(SpreadsheetNamespace + "r", new XElement(SpreadsheetNamespace + "t", "共用")),
+                new XElement(SpreadsheetNamespace + "r", new XElement(SpreadsheetNamespace + "t", "中文"))));
+            strings.Root.SetAttributeValue("count", index + 1);
+            strings.Root.SetAttributeValue("uniqueCount", index + 1);
+            RewriteXml("xl/worksheets/sheet1.xml", document => SetXmlCell(document, "B4", index.ToString(), "s"),
                 new Dictionary<string, XDocument> { { "xl/sharedStrings.xml", strings } });
             RewriteXml("xl/_rels/workbook.xml.rels", document =>
-                document.Root.Add(new XElement(document.Root.Name.Namespace + "Relationship",
-                    new XAttribute("Id", "rIdSharedStrings"),
-                    new XAttribute("Type", "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings"),
-                    new XAttribute("Target", "sharedStrings.xml"))));
+            {
+                if (!document.Root.Elements().Any(item => ((string)item.Attribute("Type"))?.EndsWith("/sharedStrings", StringComparison.Ordinal) == true))
+                    document.Root.Add(new XElement(document.Root.Name.Namespace + "Relationship",
+                        new XAttribute("Id", "rIdSharedStrings"),
+                        new XAttribute("Type", "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings"),
+                        new XAttribute("Target", "sharedStrings.xml")));
+            });
             RewriteXml("[Content_Types].xml", document =>
-                document.Root.Add(new XElement(document.Root.Name.Namespace + "Override",
-                    new XAttribute("PartName", "/xl/sharedStrings.xml"),
-                    new XAttribute("ContentType", "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"))));
+            {
+                if (!document.Root.Elements().Any(item => (string)item.Attribute("PartName") == "/xl/sharedStrings.xml"))
+                    document.Root.Add(new XElement(document.Root.Name.Namespace + "Override",
+                        new XAttribute("PartName", "/xl/sharedStrings.xml"),
+                        new XAttribute("ContentType", "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml")));
+            });
             Assert.That(ReadValidatedTable().Rows[0][1], Is.EqualTo("共用中文"));
         }
 
@@ -298,7 +315,7 @@ namespace ExcelDataTool.Tests.Editor
                 window.CreateGUI();
                 window.CreateGUI();
                 List<Button> buttons = window.rootVisualElement.Query<Button>().ToList();
-                string[] actions = { "选择 .xlsx…", "使用 Enemy 示例", "读取工作簿", "校验当前表", "导出当前表" };
+                string[] actions = { "添加文件…", "添加目录…", "添加示例", "扫描并校验", "导出当前表", "批量导出" };
                 foreach (string action in actions)
                     Assert.That(buttons.Count(button => button.text == action), Is.EqualTo(1));
                 Assert.That(window.rootVisualElement.Query<IMGUIContainer>().ToList().Count, Is.Zero);
@@ -418,7 +435,7 @@ namespace ExcelDataTool.Tests.Editor
         /// <summary>在测试副本的某个 ZIP XML 部件中执行修改，其他条目按字节复制。</summary>
         /// <param name="entryName">需要修改的 Open XML 部件路径。</param>
         /// <param name="change">针对该 XML 文档的修改动作。</param>
-        /// <param name="additionalParts">可选的新增 XML 部件，用于构造共享字符串等真实输入。</param>
+        /// <param name="additionalParts">可选的新增或替换 XML 部件，用于构造共享字符串等真实输入。</param>
         private void RewriteXml(string entryName, Action<XDocument> change, IDictionary<string, XDocument> additionalParts = null)
         {
             string replacement = Path.Combine(testRoot, "rewrite-" + Guid.NewGuid().ToString("N") + ".xlsx");
@@ -427,6 +444,7 @@ namespace ExcelDataTool.Tests.Editor
             {
                 foreach (ZipArchiveEntry entry in input.Entries)
                 {
+                    if (additionalParts != null && additionalParts.ContainsKey(entry.FullName)) continue;
                     ZipArchiveEntry copied = output.CreateEntry(entry.FullName, CompressionLevel.Optimal);
                     using (Stream source = entry.Open())
                     using (Stream destination = copied.Open())

@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "普通",
+      "drawWeight": 0.75
+    },
+    {
+      "id": 2,
+      "name": "稀有",
+      "drawWeight": 0.2
+    },
+    {
+      "id": 3,
+      "name": "传说",
+      "drawWeight": 0.05
+    }
+  ]
+}

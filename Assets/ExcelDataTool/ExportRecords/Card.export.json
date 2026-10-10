@@ -1,0 +1,19 @@
+{
+  "tool": "ExcelDataTool.ExportRecord.v1",
+  "table": "Card",
+  "source": "ASSETS/GAMEDATA/EXCEL/CARD.XLSX",
+  "files": [
+    {
+      "path": "Assets/GameData/Generated/Json/Card.json",
+      "sha256": "e2fcb2ec311b689b52d1604f770e93645d61de75319b451184b1a7438770a3ce"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/CardRow.cs",
+      "sha256": "2801f2f9cbf55450081173f97f9e061761a32c13fdbba507b74f2c52c046dafb"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/CardTable.cs",
+      "sha256": "56e7ff033747b53c1b52aad656a164f42557422894705cf782de8c68baba93ca"
+    }
+  ]
+}

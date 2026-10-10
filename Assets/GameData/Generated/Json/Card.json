@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "id": 3001,
+      "name": "火球术",
+      "cost": 2,
+      "power": 30.5,
+      "isRare": false,
+      "weight": 0.125
+    },
+    {
+      "id": 3002,
+      "name": "寒冰护盾",
+      "cost": 1,
+      "power": 12.25,
+      "isRare": false,
+      "weight": 0.375
+    },
+    {
+      "id": 3003,
+      "name": "星落",
+      "cost": 5,
+      "power": 99.75,
+      "isRare": true,
+      "weight": 0.03125
+    }
+  ]
+}

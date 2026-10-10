@@ -1,0 +1,19 @@
+{
+  "tool": "ExcelDataTool.ExportRecord.v1",
+  "table": "Rarity",
+  "source": "ASSETS/GAMEDATA/EXCEL/CARD.XLSX",
+  "files": [
+    {
+      "path": "Assets/GameData/Generated/Json/Rarity.json",
+      "sha256": "62255928b432c0119a2d037e25abac1a109c37c24f6b3ff0dfb7d20723cdd6a4"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/RarityRow.cs",
+      "sha256": "bef5ae87aac2a870c0ebd5928c8625a84e330f6180d59bf4efeb413ae68b8429"
+    },
+    {
+      "path": "Assets/GameData/Generated/Code/RarityTable.cs",
+      "sha256": "affcf39313f6b5dcddcd5fdc473da379a0fc485d8daf5bb131759da01ae0ab69"
+    }
+  ]
+}

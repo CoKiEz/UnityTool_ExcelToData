@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-10",
+  "unityVersion": "6000.3.17f1",
+  "validationProject": ".utmp/u",
+  "unityExitCode": 0,
+  "editMode": {
+    "result": "Passed",
+    "total": "69",
+    "passed": "69",
+    "failed": "0",
+    "skipped": "0",
+    "duration": "3.0876921"
+  },
+  "fixtures": [
+    {
+      "name": "StageOneTests",
+      "total": "42",
+      "passed": "42",
+      "failed": "0"
+    },
+    {
+      "name": "StageTwoEditorTests",
+      "total": "7",
+      "passed": "7",
+      "failed": "0"
+    },
+    {
+      "name": "StageTwoTests",
+      "total": "20",
+      "passed": "20",
+      "failed": "0"
+    }
+  ],
+  "functionalFilesCompared": 30,
+  "functionalFilesMismatched": [],
+  "functionalManifestSha256": "0FE552EEBA80C62CBA2FA4B381B85945A45B82A4B06DFB0C75EA4D41F592F6BC",
+  "functionalAssetsMissingMeta": [],
+  "preexistingFilesPreserved": {
+    "Assets/GameData/Excel/Enemy.xlsx": true,
+    "Assets/GameData/Generated/Code/EnemyRow.cs": true,
+    "Assets/GameData/Generated/Json/Enemy.json": true,
+    "Assets/ExcelDataTool/ExportRecords/Enemy.export.json": true,
+    "ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json": true
+  },
+  "preexistingDeletedExcelLockMetaPreserved": true,
+  "sampleBatch": {
+    "tables": 3,
+    "firstWritten": 6,
+    "firstSkipped": 3,
+    "repeatWritten": 0,
+    "repeatSkipped": 9
+  },
+  "manualVisibleEditorInteraction": "NOT RUN",
+  "notes": "实际 Unity 编译和 EditMode 在工程内隔离副本运行；不等同于可见窗口手动点击验收。"
+}
