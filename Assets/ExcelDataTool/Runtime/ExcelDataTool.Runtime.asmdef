@@ -1,0 +1,8 @@
+{
+  "name": "ExcelDataTool.Runtime",
+  "rootNamespace": "ExcelDataTool.Runtime",
+  "references": [],
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll"],
+  "autoReferenced": true
+}

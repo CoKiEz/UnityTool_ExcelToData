@@ -1,0 +1,9 @@
+{
+  "name": "GameData.Generated",
+  "rootNamespace": "ExcelDataTool.Generated",
+  "references": [],
+  "overrideReferences": true,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "noEngineReferences": true
+}

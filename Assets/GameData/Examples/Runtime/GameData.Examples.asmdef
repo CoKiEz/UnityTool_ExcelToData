@@ -1,0 +1,8 @@
+{
+  "name": "GameData.Examples",
+  "rootNamespace": "GameData.Examples",
+  "references": ["ExcelDataTool.Runtime", "GameData.Generated"],
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll"],
+  "autoReferenced": true
+}

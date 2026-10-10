@@ -26,7 +26,7 @@ namespace ExcelDataTool.Tests.Editor
         private string enemyPath;
         private string cardPath;
 
-        /// <summary>复制两个交付工作簿到独立测试目录，不改动用户源表。</summary>
+        /// <summary>复制两个随测试迁移的固定工作簿到独立目录，不依赖用户的 GameData 或运行时示例。</summary>
         [SetUp]
         public void SetUp()
         {
@@ -35,8 +35,8 @@ namespace ExcelDataTool.Tests.Editor
             Directory.CreateDirectory(sourceDirectory);
             enemyPath = Path.Combine(sourceDirectory, "Enemy.xlsx");
             cardPath = Path.Combine(sourceDirectory, "Card.xlsx");
-            File.Copy(Path.Combine(Application.dataPath, "GameData/Excel/Enemy.xlsx"), enemyPath);
-            File.Copy(Path.Combine(Application.dataPath, "GameData/Excel/Card.xlsx"), cardPath);
+            File.Copy(TestWorkbooks.GetPath("Enemy.xlsx"), enemyPath);
+            File.Copy(TestWorkbooks.GetPath("Card.xlsx"), cardPath);
         }
 
         /// <summary>核实路径位于本轮测试目录后清理测试副本。</summary>

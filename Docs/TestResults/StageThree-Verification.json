@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-10",
+  "unityVersion": "6000.3.17f1",
+  "cleanProject": ".utmp/c3 (created with Unity -createProject; empty Assets before installation)",
+  "migratedToolPath": "Assets/Vendor/ExcelDataTool",
+  "originalProjectRegressionCopy": ".utmp/u",
+  "editorExitCodes": {
+    "create": 0,
+    "toolOnlyTests": 0,
+    "cleanExport": 0,
+    "playerBuild": 0,
+    "cleanFullTests": 0,
+    "originalFullTests": 0
+  },
+  "tests": [
+    {
+      "file": "StageThree-ToolOnly-EditMode.xml",
+      "result": "Passed",
+      "total": "107",
+      "passed": "107",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "2.1821011"
+    },
+    {
+      "file": "StageThree-CleanProject-EditMode.xml",
+      "result": "Passed",
+      "total": "110",
+      "passed": "110",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "2.7990873"
+    },
+    {
+      "file": "StageThree-EditMode.xml",
+      "result": "Passed",
+      "total": "110",
+      "passed": "110",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "2.6790933"
+    }
+  ],
+  "cleanExport": {
+    "passed": true,
+    "SuccessCount": 3,
+    "WrittenCount": 9,
+    "repeatWritten": 0,
+    "repeatSkipped": 9,
+    "toolkitWindow": true
+  },
+  "windowsMonoBuild": {
+    "passed": true,
+    "buildResult": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "backend": "Mono",
+    "target": "StandaloneWindows64",
+    "playerAssemblies": [
+      "UnityEngine.TestRunner",
+      "Unity.Multiplayer.Center.Common",
+      "ExcelDataTool.Runtime",
+      "Migration.Player",
+      "GameData.Generated",
+      "GameData.Examples"
+    ],
+    "rowCount": 3,
+    "id": 1001,
+    "name": "哥布林",
+    "maxHealth": 120
+  },
+  "standalonePlayer": {
+    "exitCode": 0,
+    "passed": true,
+    "rowCount": 3,
+    "id": 1001,
+    "name": "哥布林",
+    "maxHealth": 120,
+    "error": "",
+    "isEditor": false
+  },
+  "toolEditorAndTestAssembliesExcludedFromBuiltPlayer": true,
+  "functionalFilesComparedWithRegressionCopy": 45,
+  "functionalFileMismatches": [],
+  "functionalAssetsMissingMeta": [],
+  "preexistingFilesChecked": 53,
+  "preexistingFilesChanged": [],
+  "sampleSceneReferencesMatchDeliveredMeta": true,
+  "notRun": [
+    "Visible editor mouse/layout acceptance",
+    "IL2CPP",
+    "Android/iOS/WebGL/macOS/Linux Player builds"
+  ],
+  "environmentNote": "Package Manager initially hit EPERM extracting Test Framework; reused exact official 1.6.0 package cache only. No original project compiled artifacts or ProjectSettings copied into the clean project."
+}

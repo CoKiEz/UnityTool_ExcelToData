@@ -1,0 +1,10 @@
+{
+  "name": "ExcelDataTool.Runtime.Tests",
+  "rootNamespace": "ExcelDataTool.Tests.Runtime",
+  "references": ["ExcelDataTool.Runtime"],
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll", "Newtonsoft.Json.dll"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

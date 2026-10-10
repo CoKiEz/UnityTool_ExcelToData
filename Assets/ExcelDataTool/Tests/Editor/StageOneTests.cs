@@ -27,7 +27,7 @@ namespace ExcelDataTool.Tests.Editor
         private string testRoot;
         private string workbookPath;
 
-        /// <summary>为每个测试创建独立工程目录，并复制实际交付的 Enemy.xlsx。</summary>
+        /// <summary>为每个测试创建独立工程目录，并复制随测试迁移的固定 Enemy.xlsx 夹具。</summary>
         [SetUp]
         public void SetUp()
         {
@@ -35,9 +35,7 @@ namespace ExcelDataTool.Tests.Editor
             string inputDirectory = Path.Combine(testRoot, "Assets/Input");
             Directory.CreateDirectory(inputDirectory);
             workbookPath = Path.Combine(inputDirectory, "Enemy.xlsx");
-            File.Copy(Path.Combine(Application.dataPath, "GameData/Excel/Enemy.xlsx"), workbookPath);
-            // 用户可在验收时修改交付源表；只在本测试副本恢复固定初值，使 100→120 回归可重复运行。
-            RewriteXml("xl/worksheets/sheet1.xml", document => SetXmlCell(document, "C4", "100", "n"));
+            File.Copy(TestWorkbooks.GetPath("Enemy.xlsx"), workbookPath);
         }
 
         /// <summary>在确认路径属于本次测试后，删除本测试创建的临时目录。</summary>

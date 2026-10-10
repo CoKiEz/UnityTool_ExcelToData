@@ -1,0 +1,4 @@
+<linker>
+  <!-- Json.NET 通过反射读取示例生成类型的公开字段，示例构建时保留这些类型与成员。 -->
+  <assembly fullname="GameData.Generated" preserve="all" />
+</linker>

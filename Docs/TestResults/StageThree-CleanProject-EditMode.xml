@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="110" result="Passed" total="110" passed="110" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.7990873">
+  <test-suite type="TestSuite" id="1000" name="c3" fullname="c3" runstate="Runnable" testcasecount="110" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.799087" total="110" passed="110" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1098" name="ExcelDataTool.Editor.Tests.dll" fullname="E:/NewUnityHub/UnityDevTool/UnityTool_ExcelToData/UnityTool_ExcelToData/.utmp/c3/Library/ScriptAssemblies/ExcelDataTool.Editor.Tests.dll" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.735736" total="84" passed="84" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="1944" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1099" name="ExcelDataTool" fullname="ExcelDataTool" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.735407" total="84" passed="84" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1100" name="Tests" fullname="ExcelDataTool.Tests" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.735326" total="84" passed="84" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1101" name="Editor" fullname="ExcelDataTool.Tests.Editor" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:56Z" duration="2.735192" total="84" passed="84" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="StageOneTests" fullname="ExcelDataTool.Tests.Editor.StageOneTests" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" testcasecount="42" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:54Z" duration="0.765799" total="42" passed="42" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1002" name="ActualWorkbook_ExportsThreeRowsAndMatchingCode" fullname="ExcelDataTool.Tests.Editor.StageOneTests.ActualWorkbook_ExportsThreeRowsAndMatchingCode" methodname="ActualWorkbook_ExportsThreeRowsAndMatchingCode" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="171233545" result="Passed" start-time="2026-10-10 06:59:53Z" end-time="2026-10-10 06:59:53Z" duration="0.135640" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1046" name="DamagedWorkbook_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.DamagedWorkbook_IsRejected" methodname="DamagedWorkbook_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1393356663" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.005926" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="EmptyDataRow_IsSkipped" fullname="ExcelDataTool.Tests.Editor.StageOneTests.EmptyDataRow_IsSkipped" methodname="EmptyDataRow_IsSkipped" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1726228269" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003759" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="EmptyStringAndExactIntegerAndBoolean_AreAccepted" fullname="ExcelDataTool.Tests.Editor.StageOneTests.EmptyStringAndExactIntegerAndBoolean_AreAccepted" methodname="EmptyStringAndExactIntegerAndBoolean_AreAccepted" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1787334381" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004730" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1040" name="ExistingUnownedJson_IsNotOverwritten" fullname="ExcelDataTool.Tests.Editor.StageOneTests.ExistingUnownedJson_IsNotOverwritten" methodname="ExistingUnownedJson_IsNotOverwritten" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1022053037" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.009278" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="FormulaWithCachedResult_UsesSavedValue" fullname="ExcelDataTool.Tests.Editor.StageOneTests.FormulaWithCachedResult_UsesSavedValue" methodname="FormulaWithCachedResult_UsesSavedValue" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="533309563" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.047979" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="FormulaWithoutCachedResult_InStringFieldIsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.FormulaWithoutCachedResult_InStringFieldIsRejected" methodname="FormulaWithoutCachedResult_InStringFieldIsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1850259946" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.023863" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="HandWrittenCode_IsNotOverwritten" fullname="ExcelDataTool.Tests.Editor.StageOneTests.HandWrittenCode_IsNotOverwritten" methodname="HandWrittenCode_IsNotOverwritten" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="404258345" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.010110" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1010" name="InvalidFieldName_ReportsHeaderLocation" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.021981" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1005" name="InvalidFieldName_ReportsHeaderLocation(&quot;&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation(&quot;&quot;)" methodname="InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1450747827" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003791" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1006" name="InvalidFieldName_ReportsHeaderLocation(&quot;id&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation(&quot;id&quot;)" methodname="InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="431734532" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003730" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1007" name="InvalidFieldName_ReportsHeaderLocation(&quot;class&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation(&quot;class&quot;)" methodname="InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="583701838" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004561" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1008" name="InvalidFieldName_ReportsHeaderLocation(&quot;Name&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation(&quot;Name&quot;)" methodname="InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1051941986" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003752" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1009" name="InvalidFieldName_ReportsHeaderLocation(&quot;name; public int injected&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidFieldName_ReportsHeaderLocation(&quot;name; public int injected&quot;)" methodname="InvalidFieldName_ReportsHeaderLocation" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1142745399" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003714" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1033" name="InvalidSheetName_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidSheetName_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.014918" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1029" name="InvalidSheetName_IsRejected(&quot;enemy&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidSheetName_IsRejected(&quot;enemy&quot;)" methodname="InvalidSheetName_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="837068701" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004260" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="InvalidSheetName_IsRejected(&quot;Enemy-Config&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidSheetName_IsRejected(&quot;Enemy-Config&quot;)" methodname="InvalidSheetName_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1025440104" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003094" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1031" name="InvalidSheetName_IsRejected(&quot;Enemy.cs&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidSheetName_IsRejected(&quot;Enemy.cs&quot;)" methodname="InvalidSheetName_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="2061787797" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003366" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1032" name="InvalidSheetName_IsRejected(&quot;CON&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidSheetName_IsRejected(&quot;CON&quot;)" methodname="InvalidSheetName_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1334894133" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003320" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1025" name="InvalidTypeOrValue_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.039284" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1013" name="InvalidTypeOrValue_IsRejected(&quot;Int&quot;,&quot;1&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;Int&quot;,&quot;1&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1366084739" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004003" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1014" name="InvalidTypeOrValue_IsRejected(&quot;decimal&quot;,&quot;1&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;decimal&quot;,&quot;1&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1290460420" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002732" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1015" name="InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1699095687" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002975" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1016" name="InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;1.5&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;1.5&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1972018393" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003337" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1017" name="InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;2147483648&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;2147483648&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="903731493" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002864" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1018" name="InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;1.0000000000000000000000000000001&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;int&quot;,&quot;1.0000000000000000000000000000001&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="118929578" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002707" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1019" name="InvalidTypeOrValue_IsRejected(&quot;float&quot;,&quot;NaN&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;float&quot;,&quot;NaN&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1064171926" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003328" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1020" name="InvalidTypeOrValue_IsRejected(&quot;float&quot;,&quot;1e50&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;float&quot;,&quot;1e50&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1985948535" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002834" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1021" name="InvalidTypeOrValue_IsRejected(&quot;double&quot;,&quot;Infinity&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;double&quot;,&quot;Infinity&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1105157060" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003104" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1022" name="InvalidTypeOrValue_IsRejected(&quot;double&quot;,&quot;1e500&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;double&quot;,&quot;1e500&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="79079534" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002771" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1023" name="InvalidTypeOrValue_IsRejected(&quot;bool&quot;,&quot;1&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;bool&quot;,&quot;1&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="55970290" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003520" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1024" name="InvalidTypeOrValue_IsRejected(&quot;bool&quot;,&quot;&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.InvalidTypeOrValue_IsRejected(&quot;bool&quot;,&quot;&quot;)" methodname="InvalidTypeOrValue_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1994998564" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003185" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1011" name="MissingId_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.MissingId_IsRejected" methodname="MissingId_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="618421593" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003143" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1047" name="MultiLetterColumn_UsesExcelCoordinate" fullname="ExcelDataTool.Tests.Editor.StageOneTests.MultiLetterColumn_UsesExcelCoordinate" methodname="MultiLetterColumn_UsesExcelCoordinate" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1434085285" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.002750" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="NonIntegerIdType_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.NonIntegerIdType_IsRejected" methodname="NonIntegerIdType_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1735229960" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003065" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="NumericConversion_IsIndependentOfCurrentCulture" fullname="ExcelDataTool.Tests.Editor.StageOneTests.NumericConversion_IsIndependentOfCurrentCulture" methodname="NumericConversion_IsIndependentOfCurrentCulture" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="2141981809" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.006181" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="RepeatedExport_ProducesIdenticalBytes" fullname="ExcelDataTool.Tests.Editor.StageOneTests.RepeatedExport_ProducesIdenticalBytes" methodname="RepeatedExport_ProducesIdenticalBytes" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1291713642" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.038547" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1041" name="SameTableNameFromDifferentSource_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.SameTableNameFromDifferentSource_IsRejected" methodname="SameTableNameFromDifferentSource_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="620482731" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.028927" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="SharedRichTextStrings_AreReadInOrder" fullname="ExcelDataTool.Tests.Editor.StageOneTests.SharedRichTextStrings_AreReadInOrder" methodname="SharedRichTextStrings_AreReadInOrder" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1313531859" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.055752" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1045" name="UnsafeOutputDirectory_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageOneTests.UnsafeOutputDirectory_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.024182" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1042" name="UnsafeOutputDirectory_IsRejected(&quot;../Escape&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.UnsafeOutputDirectory_IsRejected(&quot;../Escape&quot;)" methodname="UnsafeOutputDirectory_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="63166301" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.008244" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1043" name="UnsafeOutputDirectory_IsRejected(&quot;Assets/../../Escape&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.UnsafeOutputDirectory_IsRejected(&quot;Assets/../../Escape&quot;)" methodname="UnsafeOutputDirectory_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="620169566" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.005968" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1044" name="UnsafeOutputDirectory_IsRejected(&quot;ProjectSettings&quot;)" fullname="ExcelDataTool.Tests.Editor.StageOneTests.UnsafeOutputDirectory_IsRejected(&quot;ProjectSettings&quot;)" methodname="UnsafeOutputDirectory_IsRejected" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1935898781" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.008235" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1038" name="WindowCreateGui_CanRebuildToolkitControls" fullname="ExcelDataTool.Tests.Editor.StageOneTests.WindowCreateGui_CanRebuildToolkitControls" methodname="WindowCreateGui_CanRebuildToolkitControls" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="831812270" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.123009" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="WorkbookEdit_UpdatesJsonAndDuplicateIdPreservesPreviousFiles" fullname="ExcelDataTool.Tests.Editor.StageOneTests.WorkbookEdit_UpdatesJsonAndDuplicateIdPreservesPreviousFiles" methodname="WorkbookEdit_UpdatesJsonAndDuplicateIdPreservesPreviousFiles" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="1122788046" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.111100" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="WorkbookMultiLetterCell_IsReadAtColumn27" fullname="ExcelDataTool.Tests.Editor.StageOneTests.WorkbookMultiLetterCell_IsReadAtColumn27" methodname="WorkbookMultiLetterCell_IsReadAtColumn27" classname="ExcelDataTool.Tests.Editor.StageOneTests" runstate="Runnable" seed="886173018" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.033829" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1048" name="StageThreeTests" fullname="ExcelDataTool.Tests.Editor.StageThreeTests" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.219763" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1051" name="CultureSwitch_DoesNotChangeJsonOrGeneratedCode" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.CultureSwitch_DoesNotChangeJsonOrGeneratedCode" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.014372" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1049" name="CultureSwitch_DoesNotChangeJsonOrGeneratedCode(&quot;fr-FR&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.CultureSwitch_DoesNotChangeJsonOrGeneratedCode(&quot;fr-FR&quot;)" methodname="CultureSwitch_DoesNotChangeJsonOrGeneratedCode" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="413110175" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.008915" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1050" name="CultureSwitch_DoesNotChangeJsonOrGeneratedCode(&quot;ar-SA&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.CultureSwitch_DoesNotChangeJsonOrGeneratedCode(&quot;ar-SA&quot;)" methodname="CultureSwitch_DoesNotChangeJsonOrGeneratedCode" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="361913249" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004910" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1053" name="Descriptions_CannotEscapeGeneratedDocumentation" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.Descriptions_CannotEscapeGeneratedDocumentation" methodname="Descriptions_CannotEscapeGeneratedDocumentation" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="46869245" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004038" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1057" name="EmptyFloatingPointValue_IsRejectedAtActualCell" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.EmptyFloatingPointValue_IsRejectedAtActualCell" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.010806" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1055" name="EmptyFloatingPointValue_IsRejectedAtActualCell(&quot;float&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.EmptyFloatingPointValue_IsRejectedAtActualCell(&quot;float&quot;)" methodname="EmptyFloatingPointValue_IsRejectedAtActualCell" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1309206633" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004810" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1056" name="EmptyFloatingPointValue_IsRejectedAtActualCell(&quot;double&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.EmptyFloatingPointValue_IsRejectedAtActualCell(&quot;double&quot;)" methodname="EmptyFloatingPointValue_IsRejectedAtActualCell" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1841610769" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.005311" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1064" name="ExternalWorksheetRelationship_IsRejected" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.ExternalWorksheetRelationship_IsRejected" methodname="ExternalWorksheetRelationship_IsRejected" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="333272749" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.027288" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="FormulaWithCachedEmptyString_RemainsValid" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.FormulaWithCachedEmptyString_RemainsValid" methodname="FormulaWithCachedEmptyString_RemainsValid" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="982021062" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.027572" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="IntegerRangeEndpoints_RemainExact" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.IntegerRangeEndpoints_RemainExact" methodname="IntegerRangeEndpoints_RemainExact" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1818403610" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004273" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="JsonEscaping_RoundTripsSpecialTextAndEmptyString" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.JsonEscaping_RoundTripsSpecialTextAndEmptyString" methodname="JsonEscaping_RoundTripsSpecialTextAndEmptyString" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="2101249552" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.025903" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="MultipleErrors_PreserveEverySourceCoordinate" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.MultipleErrors_PreserveEverySourceCoordinate" methodname="MultipleErrors_PreserveEverySourceCoordinate" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1841258255" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.004673" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1067" name="UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.009069" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1065" name="UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting(&quot;Assets/Editor/Generated&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting(&quot;Assets/Editor/Generated&quot;)" methodname="UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1850013751" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.005349" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1066" name="UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting(&quot;Assets/CON&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting(&quot;Assets/CON&quot;)" methodname="UnsafeRuntimeOutputLocation_IsRejectedBeforeWriting" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="2124035195" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003079" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1061" name="UnsupportedStoredCell_ReportsPreciseLocation" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsupportedStoredCell_ReportsPreciseLocation" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.054454" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1059" name="UnsupportedStoredCell_ReportsPreciseLocation(&quot;d&quot;,&quot;2026-10-10T00:00:00&quot;,&quot;日期&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsupportedStoredCell_ReportsPreciseLocation(&quot;d&quot;,&quot;2026-10-10T00:00:00&quot;,&quot;日期&quot;)" methodname="UnsupportedStoredCell_ReportsPreciseLocation" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="373340436" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.023802" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1060" name="UnsupportedStoredCell_ReportsPreciseLocation(&quot;e&quot;,&quot;#DIV/0!&quot;,&quot;#DIV/0!&quot;)" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.UnsupportedStoredCell_ReportsPreciseLocation(&quot;e&quot;,&quot;#DIV/0!&quot;,&quot;#DIV/0!&quot;)" methodname="UnsupportedStoredCell_ReportsPreciseLocation" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1825598998" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.030078" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1063" name="XmlDocumentType_IsRejectedBeforeEntityExpansion" fullname="ExcelDataTool.Tests.Editor.StageThreeTests.XmlDocumentType_IsRejectedBeforeEntityExpansion" methodname="XmlDocumentType_IsRejectedBeforeEntityExpansion" classname="ExcelDataTool.Tests.Editor.StageThreeTests" runstate="Runnable" seed="1596459961" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.030512" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1068" name="StageTwoEditorTests" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:55Z" duration="0.180314" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1069" name="MissingSettings_ReturnDefaultsWithoutWriting" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.MissingSettings_ReturnDefaultsWithoutWriting" methodname="MissingSettings_ReturnDefaultsWithoutWriting" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="1621001907" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.007861" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="Preview_IncludesInvalidValuesAndSkipsEmptyRows" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.Preview_IncludesInvalidValuesAndSkipsEmptyRows" methodname="Preview_IncludesInvalidValuesAndSkipsEmptyRows" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="2017362193" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.006522" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="Preview_IsBoundedAndRetainsActualExcelRows" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.Preview_IsBoundedAndRetainsActualExcelRows" methodname="Preview_IsBoundedAndRetainsActualExcelRows" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="154431361" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.014540" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="Settings_AreScopedToProjectRoot" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.Settings_AreScopedToProjectRoot" methodname="Settings_AreScopedToProjectRoot" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="782475438" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.115290" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="SettingsRoundTrip_PersistsInputsOutputsNamespaceAndSelection" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.SettingsRoundTrip_PersistsInputsOutputsNamespaceAndSelection" methodname="SettingsRoundTrip_PersistsInputsOutputsNamespaceAndSelection" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="1127328518" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.008685" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="SettingsStore_RejectsOutsideProjectPath" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.SettingsStore_RejectsOutsideProjectPath" methodname="SettingsStore_RejectsOutsideProjectPath" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="1263079939" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:54Z" duration="0.003387" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="SettingsWithoutExplicitMarker_ArePreserved" fullname="ExcelDataTool.Tests.Editor.StageTwoEditorTests.SettingsWithoutExplicitMarker_ArePreserved" methodname="SettingsWithoutExplicitMarker_ArePreserved" classname="ExcelDataTool.Tests.Editor.StageTwoEditorTests" runstate="Runnable" seed="1548168359" result="Passed" start-time="2026-10-10 06:59:54Z" end-time="2026-10-10 06:59:55Z" duration="0.021331" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1076" name="StageTwoTests" fullname="ExcelDataTool.Tests.Editor.StageTwoTests" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:56Z" duration="1.567801" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1078" name="Batch_ExportsAllThreeTablesFromNestedDirectories" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.Batch_ExportsAllThreeTablesFromNestedDirectories" methodname="Batch_ExportsAllThreeTablesFromNestedDirectories" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="874460171" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.098612" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1082" name="CrLfFiles_AreSkippedWithoutRewriting" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.CrLfFiles_AreSkippedWithoutRewriting" methodname="CrLfFiles_AreSkippedWithoutRewriting" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="324473559" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.115522" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="CurrentSelection_ExportsOnlyThatTableAndRejectsMissingSelection" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.CurrentSelection_ExportsOnlyThatTableAndRejectsMissingSelection" methodname="CurrentSelection_ExportsOnlyThatTableAndRejectsMissingSelection" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1136411957" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.051147" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="DuplicateNames_BlockBothTablesBeforeAnyOverwrite" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.DuplicateNames_BlockBothTablesBeforeAnyOverwrite" methodname="DuplicateNames_BlockBothTablesBeforeAnyOverwrite" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1436678814" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.095957" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1088" name="IdenticalUnownedFiles_AreStillRejected" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.IdenticalUnownedFiles_AreStillRejected" methodname="IdenticalUnownedFiles_AreStillRejected" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1851130405" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.084552" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="InvalidAndDamagedInputs_PreserveOldDataAndAllowOtherTables" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidAndDamagedInputs_PreserveOldDataAndAllowOtherTables" methodname="InvalidAndDamagedInputs_PreserveOldDataAndAllowOtherTables" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1255600016" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.128024" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1095" name="InvalidNamespace_DoesNotCreateAnyOutput" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidNamespace_DoesNotCreateAnyOutput" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.101134" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1091" name="InvalidNamespace_DoesNotCreateAnyOutput(&quot;&quot;)" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidNamespace_DoesNotCreateAnyOutput(&quot;&quot;)" methodname="InvalidNamespace_DoesNotCreateAnyOutput" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="451565659" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.023241" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1092" name="InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game..Data&quot;)" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game..Data&quot;)" methodname="InvalidNamespace_DoesNotCreateAnyOutput" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="2067456400" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.024377" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1093" name="InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game.class&quot;)" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game.class&quot;)" methodname="InvalidNamespace_DoesNotCreateAnyOutput" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1674109296" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.023886" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1094" name="InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game; public class Injected {}&quot;)" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidNamespace_DoesNotCreateAnyOutput(&quot;Game; public class Injected {}&quot;)" methodname="InvalidNamespace_DoesNotCreateAnyOutput" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="177139404" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.028415" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1085" name="InvalidSheetName_DoesNotStopSiblingSheet" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.InvalidSheetName_DoesNotStopSiblingSheet" methodname="InvalidSheetName_DoesNotStopSiblingSheet" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="968878644" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.097088" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1097" name="LockedOutput_RollsBackAndSupportsRetry" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.LockedOutput_RollsBackAndSupportsRetry" methodname="LockedOutput_RollsBackAndSupportsRetry" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1153120113" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.110346" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1086" name="MissingSource_IsReportedAlongsideValidSources" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.MissingSource_IsReportedAlongsideValidSources" methodname="MissingSource_IsReportedAlongsideValidSources" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1282692329" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:55Z" duration="0.025695" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1090" name="NamespaceSetting_ChangesCodeAndThenBecomesIncremental" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.NamespaceSetting_ChangesCodeAndThenBecomesIncremental" methodname="NamespaceSetting_ChangesCodeAndThenBecomesIncremental" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="843696656" result="Passed" start-time="2026-10-10 06:59:55Z" end-time="2026-10-10 06:59:56Z" duration="0.143894" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1096" name="RenamedSheet_WarnsAndKeepsOldOutputs" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.RenamedSheet_WarnsAndKeepsOldOutputs" methodname="RenamedSheet_WarnsAndKeepsOldOutputs" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1303652820" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.121043" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1077" name="Scan_DeduplicatesSourcesAndFindsEveryDataSheet" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.Scan_DeduplicatesSourcesAndFindsEveryDataSheet" methodname="Scan_DeduplicatesSourcesAndFindsEveryDataSheet" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="990086647" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.021273" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1081" name="SchemaEdit_RewritesRowClassAndPreservesContainer" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.SchemaEdit_RewritesRowClassAndPreservesContainer" methodname="SchemaEdit_RewritesRowClassAndPreservesContainer" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="1537070236" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.112353" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="UnchangedBatch_PreservesAllFileTimestamps" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.UnchangedBatch_PreservesAllFileTimestamps" methodname="UnchangedBatch_PreservesAllFileTimestamps" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="706779178" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.084487" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1087" name="UnownedCode_BlocksOnlyConflictingTable" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.UnownedCode_BlocksOnlyConflictingTable" methodname="UnownedCode_BlocksOnlyConflictingTable" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="511667628" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.061561" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="ValueEdit_UpdatesOnlyAffectedJson" fullname="ExcelDataTool.Tests.Editor.StageTwoTests.ValueEdit_UpdatesOnlyAffectedJson" methodname="ValueEdit_UpdatesOnlyAffectedJson" classname="ExcelDataTool.Tests.Editor.StageTwoTests" runstate="Runnable" seed="458175670" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.109507" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1130" name="ExcelDataTool.Runtime.Tests.dll" fullname="E:/NewUnityHub/UnityDevTool/UnityTool_ExcelToData/UnityTool_ExcelToData/.utmp/c3/Library/ScriptAssemblies/ExcelDataTool.Runtime.Tests.dll" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.041060" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="1944" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1131" name="ExcelDataTool" fullname="ExcelDataTool" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.040680" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1132" name="Tests" fullname="ExcelDataTool.Tests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.040579" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1133" name="Runtime" fullname="ExcelDataTool.Tests.Runtime" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.040479" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1102" name="JsonTableLoaderTests" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.040240" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1107" name="DateLikeText_RemainsString" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.DateLikeText_RemainsString" methodname="DateLikeText_RemainsString" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="842164542" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.012964" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1112" name="EmptyJson_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.EmptyJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000898" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1110" name="EmptyJson_IsRejected(&quot;&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.EmptyJson_IsRejected(&quot;&quot;)" methodname="EmptyJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="737017159" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000369" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1111" name="EmptyJson_IsRejected(&quot; \r\n\t &quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.EmptyJson_IsRejected(&quot; \r\n\t &quot;)" methodname="EmptyJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1656986425" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000087" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1104" name="EmptyRows_ProducesEmptyCollection" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.EmptyRows_ProducesEmptyCollection" methodname="EmptyRows_ProducesEmptyCollection" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="141739514" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000192" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1121" name="InvalidProtocol_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.005072" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1113" name="InvalidProtocol_IsRejected(&quot;[]&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;[]&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1314856495" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000699" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1114" name="InvalidProtocol_IsRejected(&quot;null&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;null&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1877375987" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000235" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1115" name="InvalidProtocol_IsRejected(&quot;{}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="903066439" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000095" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1116" name="InvalidProtocol_IsRejected(&quot;{\&quot;Rows\&quot;:[]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{\&quot;Rows\&quot;:[]}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="192974697" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000118" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1117" name="InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:null}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:null}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1457671720" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000091" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1118" name="InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:{}}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:{}}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1759497346" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000071" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1119" name="InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:[null]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:[null]}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1097528115" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000095" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1120" name="InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:[1]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.InvalidProtocol_IsRejected(&quot;{\&quot;rows\&quot;:[1]}&quot;)" methodname="InvalidProtocol_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="114069041" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000068" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1125" name="MalformedJson_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.MalformedJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.004534" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1122" name="MalformedJson_IsRejected(&quot;{&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.MalformedJson_IsRejected(&quot;{&quot;)" methodname="MalformedJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1240292099" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.002003" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1123" name="MalformedJson_IsRejected(&quot;{\&quot;rows\&quot;:[],\&quot;rows\&quot;:[]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.MalformedJson_IsRejected(&quot;{\&quot;rows\&quot;:[],\&quot;rows\&quot;:[]}&quot;)" methodname="MalformedJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="2008876112" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.001177" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1124" name="MalformedJson_IsRejected(&quot;{\&quot;rows\&quot;:[]} {\&quot;rows\&quot;:[]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.MalformedJson_IsRejected(&quot;{\&quot;rows\&quot;:[]} {\&quot;rows\&quot;:[]}&quot;)" methodname="MalformedJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="352851438" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000484" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1108" name="NullAsset_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.NullAsset_IsRejected" methodname="NullAsset_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="126529957" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.001325" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="NullJson_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.NullJson_IsRejected" methodname="NullJson_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1474888881" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000265" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1106" name="NumericConversion_IsCultureIndependent" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.NumericConversion_IsCultureIndependent" methodname="NumericConversion_IsCultureIndependent" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="222814238" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.004514" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1105" name="RepeatedLoad_ProducesIndependentObjects" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.RepeatedLoad_ProducesIndependentObjects" methodname="RepeatedLoad_ProducesIndependentObjects" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="1658309767" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000758" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1128" name="SchemaMismatch_IsRejected" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.SchemaMismatch_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.003658" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1126" name="SchemaMismatch_IsRejected(&quot;{\&quot;rows\&quot;:[{\&quot;id\&quot;:\&quot;无法转换\&quot;}]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.SchemaMismatch_IsRejected(&quot;{\&quot;rows\&quot;:[{\&quot;id\&quot;:\&quot;无法转换\&quot;}]}&quot;)" methodname="SchemaMismatch_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="29198775" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.002652" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1127" name="SchemaMismatch_IsRejected(&quot;{\&quot;rows\&quot;:[{\&quot;id\&quot;:1,\&quot;unknownField\&quot;:5}]}&quot;)" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.SchemaMismatch_IsRejected(&quot;{\&quot;rows\&quot;:[{\&quot;id\&quot;:1,\&quot;unknownField\&quot;:5}]}&quot;)" methodname="SchemaMismatch_IsRejected" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="448357395" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000478" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1103" name="TextAsset_LoadsStronglyTypedFields" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.TextAsset_LoadsStronglyTypedFields" methodname="TextAsset_LoadsStronglyTypedFields" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="355549159" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.003217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1129" name="TypeMetadata_CannotActivateTypesOrUseGlobalDefaults" fullname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests.TypeMetadata_CannotActivateTypesOrUseGlobalDefaults" methodname="TypeMetadata_CannotActivateTypesOrUseGlobalDefaults" classname="ExcelDataTool.Tests.Runtime.JsonTableLoaderTests" runstate="Runnable" seed="998659345" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000866" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1138" name="GameData.Examples.Tests.dll" fullname="E:/NewUnityHub/UnityDevTool/UnityTool_ExcelToData/UnityTool_ExcelToData/.utmp/c3/Library/ScriptAssemblies/GameData.Examples.Tests.dll" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.014483" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="1944" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1139" name="GameData" fullname="GameData" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.014140" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1140" name="Examples" fullname="GameData.Examples" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.014019" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1141" name="Tests" fullname="GameData.Examples.Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.013915" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1134" name="EnemyConfigExampleTests" fullname="GameData.Examples.Tests.EnemyConfigExampleTests" classname="GameData.Examples.Tests.EnemyConfigExampleTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.013801" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1136" name="Component_LoadsReferencedAssetAndExposesEnemy" fullname="GameData.Examples.Tests.EnemyConfigExampleTests.Component_LoadsReferencedAssetAndExposesEnemy" methodname="Component_LoadsReferencedAssetAndExposesEnemy" classname="GameData.Examples.Tests.EnemyConfigExampleTests" runstate="Runnable" seed="1735660115" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.010950" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1137" name="Component_MissingEnemyFailsWithoutStaleResult" fullname="GameData.Examples.Tests.EnemyConfigExampleTests.Component_MissingEnemyFailsWithoutStaleResult" methodname="Component_MissingEnemyFailsWithoutStaleResult" classname="GameData.Examples.Tests.EnemyConfigExampleTests" runstate="Runnable" seed="389477402" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.000957" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1135" name="GeneratedEnemyAsset_RoundTripsToStrongTypes" fullname="GameData.Examples.Tests.EnemyConfigExampleTests.GeneratedEnemyAsset_RoundTripsToStrongTypes" methodname="GeneratedEnemyAsset_RoundTripsToStrongTypes" classname="GameData.Examples.Tests.EnemyConfigExampleTests" runstate="Runnable" seed="1479958957" result="Passed" start-time="2026-10-10 06:59:56Z" end-time="2026-10-10 06:59:56Z" duration="0.001045" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: E:\NewUnityHub\UnityDevTool\UnityTool_ExcelToData\UnityTool_ExcelToData\.utmp\StageThreeValidation\CleanProject-EditMode.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

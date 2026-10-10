@@ -58,7 +58,7 @@
 
 ## 阶段二：日常使用的编辑器工具（2026-10-10）
 
-**当前状态：第二阶段开发完成，等待用户验收。未进入第三阶段。**
+**当前状态：用户已于 2026-10-10 确认第二阶段验收通过，并授权第三阶段。**
 
 ### 实现与文件
 
@@ -102,3 +102,48 @@ Unity 测试在工程内已有隔离副本 `.utmp/u` 执行，未关闭用户原
 - 命名空间支持点分 ASCII C# 标识符，拒绝关键字及 `System` 根；自定义生成代码用完整框架类型名避免名称遮蔽。
 - 既有表更换源位置或输出目录仍明确阻止静默覆盖，不自动迁移或删除旧产物；手改生成文件或丢失归属记录会触发保护。跨多表不是整体事务：合法表可以成功，失败表保留旧数据；单表可捕获的写入异常执行回滚，断电/终止进程限制延续第一阶段。
 - 公式缓存、日期/复杂类型及文件规模上限延续第一阶段。跨工程移植与运行时读取示例属于第三阶段，尚未开始。
+
+以上为第二阶段交付时的实现及验证记录；第三阶段新增内容见下文。
+
+## 阶段三：通用化、自动化测试与最终交付（2026-10-10）
+
+**当前状态：第三阶段开发及自动验证完成，等待用户验收。已停止开发。**
+
+### 实现与架构
+
+- 保持可复制的 Assets 插件结构，通用 Editor 和 Runtime 各有独立程序集；编辑器核心不引用任何 Enemy/Card、示例场景或运行时配置类型。示例生成代码使用 `GameData.Generated` 程序集，可选示例使用 `GameData.Examples`，测试程序集全部限定 Editor。
+- 新增 `JsonTableLoader.Load<TTable>(TextAsset)` / `LoadJson<TTable>(string)`，从已加载资源读取固定 `rows` JSON；明确拒绝损坏结构、未知成员、类型转换失败，并禁用类型元数据激活。不读 Player 中的 Assets 磁盘路径，不管理存档或回写配置。
+- 新增 `EnemyConfigExample` MonoBehaviour，引用实际 Enemy JSON 并读取 `EnemyTable` 和 `id == 1001` 的 `EnemyRow`。示例有独立场景及仅作用于示例生成程序集的 `link.xml`，便于验收及代码裁剪配置参考。
+- 自动测试改用 `Tests/Fixtures` 固定工作簿，通过脚本编译位置定位，支持插件移动目录；不再依赖或修改用户的 `Assets/GameData/Excel`。补充 15 项编辑器边界测试、23 项通用运行时读取测试和 3 项真实示例 TextAsset 测试。
+- 完成根 `README.md` 的安装、使用、表格协议、迁移与常见问题，以及 `Docs/ThirdPartyNotices.md` 的实际依赖版本和许可证记录。选择 Assets 目录迁移以减少包结构变更，无需引入 UPM 私有仓库或其他框架。
+
+主要文件：`Assets/ExcelDataTool/Runtime/`、`Tests/Fixtures/`、`Tests/Editor/StageThreeTests.cs`、`Tests/Runtime/`；`Assets/GameData/Generated/Code/GameData.Generated.asmdef`、`Assets/GameData/Examples/`；`README.md`、`Docs/ThirdPartyNotices.md`。沿用官方 JSON 包 3.2.2（Newtonsoft 13.0.2）及现有 Test Framework 1.6.0；没有新增外部 DLL 或修改源表、既有生成 JSON/C#、业务场景和工程设置。
+
+### 实际验证
+
+| 状态 | 验证内容与证据 |
+|---|---|
+| PASS | 使用 Unity 6000.3.17f1 的 `-createProject` 在工程内 `.utmp/c3` 创建全新项目，退出码 0；未复制原工程的 Assets、ProjectSettings 或编译产物来冒充干净项目。 |
+| PASS | 仅安装工具及其测试到 `Assets/Vendor/ExcelDataTool`，此时没有 GameData 或示例资产：实际编译成功，**107/107 EditMode 通过**（84 项 Editor、23 项 Runtime），失败/跳过 0，退出码 0。证明夹具及工具可以随安装目录迁移。[原始 XML](TestResults/StageThree-ToolOnly-EditMode.xml)。 |
+| PASS | 干净项目随后添加两个真实源工作簿，通过正式服务从零导出三表 **9 个 JSON/C#**，再次导出为 **0 写入、9 跳过**。实际创建、显示并关闭 UI Toolkit 窗口，核心按钮存在且没有 IMGUI 主窗口；无界面进程不等同于可见窗口手工点击。 |
+| PASS | 加入运行时示例后，干净项目和原工程隔离副本各自实际编译并完成 **110/110 EditMode**，失败/跳过 0，退出码均 0；包含从真实导入 TextAsset 反序列化真实 EnemyTable/EnemyRow 的 3 项示例测试。[干净工程 XML](TestResults/StageThree-CleanProject-EditMode.xml)、[原工程回归 XML](TestResults/StageThree-EditMode.xml)。 |
+| PASS | **Windows x64 Mono Development Player 实际构建成功，0 错误、0 警告，并实际运行至退出码 0。** 程序在 `Application.isEditor == false` 下通过场景 TextAsset 读到 3 行 Enemy、`id=1001`、名称“哥布林”、`maxHealth=120`；与交付 JSON 一致。本工具 Editor 和测试程序集未进入构建产物。构建、运行和导出结果汇总见 [验证记录](TestResults/StageThree-Verification.json)。 |
+| PASS | 45 个功能文件与实际受测原工程副本字节一致，通用工具与干净工程 Vendor 安装内容一致；53 个阶段开始时已有的源表/数据/场景/配置文件摘要不变，新增功能资产均具有 `.meta`。新场景正确引用交付脚本及 Enemy.json，未包含临时 Player 验证脚本。`git diff --check` 通过。 |
+| FAIL → PASS | 干净项目首次解析 Test Framework 时出现 Package Manager 解包 `EPERM`，使用现有官方 **1.6.0** 包缓存后解决，未复制旧工程的脚本编译产物。新增外部工作表测试首轮误取关系文件中的首条 worksheet（实际指向应忽略的 `#说明`），已改为按 Enemy 的关系 ID 定位；完整重跑 107/107 及两套 110/110 通过，无遗留失败用例。 |
+| NOT RUN | 用户可见窗口的实际操作和示例场景 Play Mode 观感；自动运行不能替代人工验收。 |
+| NOT RUN | IL2CPP、移动端、WebGL、macOS/Linux 构建；本次目标为当前可用的 Windows Mono 环境。 |
+
+Unity 测试命令使用 `-batchmode -nographics -projectPath <副本> -runTests -testPlatform EditMode -testResults <XML> -logFile <日志>`。干净导出与构建使用临时验证入口 `-executeMethod CleanProjectExport.Run` / `RuntimeSampleValidation.Run`，Player 使用 `ExcelDataToolSample.exe -batchmode -nographics -logFile <日志>`；原始日志、验证入口源码和首轮失败结果位于 `.utmp/StageThreeValidation/`，构建位于 `.utmp/c3/Build/`，均不进入 Git。新场景由 Unity 创建后复制回交付目录，原工程保持打开，既有场景未改动。未自动 commit/push。
+
+### 人工验收（四步）
+
+1. 在当前工程等待编译完成，打开 **Window → General → Test Runner → EditMode** 运行工具及示例测试；打开导表窗口，确认既有示例可继续扫描、预览和增量导出。
+2. 打开 `Assets/GameData/Examples/Scenes/EnemyConfigExample.unity`，确认组件已引用 `Enemy.json`，进入 Play Mode，Console 应输出 `ID=1001`、哥布林及 JSON 中对应的属性；这是静态配置读取，不改源表或存档。
+3. 按 README 的最小迁移步骤，在干净 Unity 6 工程安装官方 JSON 包并复制 Editor/Runtime；添加自己的 `.xlsx` 导出。需要自动测试时额外安装 Test Framework 并复制 Tests；不要求复制 GameData。
+4. 按 README 的完整示例迁移步骤安装 GameData 及匹配的 ExportRecords，保留相对布局和 `.meta`，打开示例场景再运行。若改了命名空间或 Enemy 表结构，应同步修改可选示例代码。
+
+### 已知限制
+
+- 运行时示例固定使用默认命名空间和 Enemy 字段，是可选教学代码；生产项目只复制通用 Editor/Runtime 即可使用自己的表，不需要 Enemy 类型。
+- 反射反序列化涉及代码裁剪，示例已提供 `link.xml`；更换生成程序集、脚本后端或目标平台后仍需按实际 Player 构建验证，不能据此声称 IL2CPP 已验证。
+- 第三阶段不改变既有输出迁移保护、同步扫描、预览规模、公式缓存和 XLSX 类型/文件规模限制。工程外源文件的归属记录包含路径摘要，换机器时需特别核对；不自动接管、迁移或删除未知文件。
