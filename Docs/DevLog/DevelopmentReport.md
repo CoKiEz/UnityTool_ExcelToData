@@ -147,3 +147,42 @@ Unity 测试命令使用 `-batchmode -nographics -projectPath <副本> -runTests
 - 运行时示例固定使用默认命名空间和 Enemy 字段，是可选教学代码；生产项目只复制通用 Editor/Runtime 即可使用自己的表，不需要 Enemy 类型。
 - 反射反序列化涉及代码裁剪，示例已提供 `link.xml`；更换生成程序集、脚本后端或目标平台后仍需按实际 Player 构建验证，不能据此声称 IL2CPP 已验证。
 - 第三阶段不改变既有输出迁移保护、同步扫描、预览规模、公式缓存和 XLSX 类型/文件规模限制。工程外源文件的归属记录包含路径摘要，换机器时需特别核对；不自动接管、迁移或删除未知文件。
+
+## 使用文档与开源发布准备（2026-10-10，用户后续授权）
+
+**当前状态：文档与本地发行候选包已完成，等待用户验收；尚未发布到 GitHub。** 用户已反馈在重新创建的 Unity 6 项目中导入 Enemy、Card 并生成 Code/JSON 成功，本次按后续要求完善使用和发布资料，不新增正式开发阶段。
+
+### 交付内容
+
+- 根 [README](../README.md) 改为面向策划的使用手册：先讲工作簿/工作表、三行表头、ID、类型及空值规则，再讲 Unity Hub、菜单、扫描预览、导出、结果交付和常见错误。技术内容分别放入 [安装说明](Installation.md) 和 [开发者指南](DeveloperGuide.md)。
+- 按用户明确选择加入根 [MIT LICENSE](../LICENSE)，版权标注 `2026 CoKiEz`；更新 [第三方声明](ThirdPartyNotices.md)，包内 Documentation 同时包含许可、依赖和快速使用说明。未将 Unity 组件改授 MIT，也不在包中分发第三方 DLL。
+- 新增 [截图清单](ScreenshotGuide.md)，README 留下五处隐藏插图位置。尚未收到截图，未放入伪造截图或无法显示的图片链接。
+- 新增 `Editor/Distribution/ExcelDataToolPackageExporter.cs`，通过 **Tools → Export Excel Data Tool Packages** 导出工具与模板两包。固定逐文件清单、不收集隐式依赖；预检全部输入和两个目标，拒绝同名覆盖、路径越界及链接绕过，失败只清理本次持有的临时产物。该脚本只在源码工程使用，不进入发行包。
+- 本地 `Releases/1.0.0/` 已生成两个 `.unitypackage`、`SHA256SUMS`、`ReleaseNotes.md`。[发布指南](ReleaseGuide.md) 说明将这四项上传至 GitHub Releases；本地二进制由 Git 忽略。没有自动 commit、tag、push 或发布。
+
+### 实际验证
+
+| 状态 | 内容及证据 |
+|---|---|
+| PASS | 使用 Unity 6000.3.17f1 在工程内隔离副本 `.utmp/u` 调用 `ExcelDataToolPackageExporter.ExportBatch`，实际导出成功，退出码 0。 |
+| PASS | 解读两个真实 gzip/tar 安装包：工具恰好 17 个文件，模板恰好 3 个文件；逐文件内容与根工作区一致，GUID 与原 `.meta` 一致。没有 Tests、旧生成物、ExportRecords、示例场景、DLL 或 ProjectSettings。 |
+| PASS | Unity `-createProject` 创建全新 `.utmp/p4`，Assets 初始为空；仅在其 manifest 追加官方 JSON 3.2.2，再用 `-importPackage` 分别导入工具、模板，创建及两次导入退出码均为 0。未复制源码工具、旧生成类型或原工程编译产物来代替包导入。 |
+| PASS | 新项目扫描三张表，通过正式服务首次写入 9 个 JSON/C#，重复导出 0 写入、9 跳过。实际创建和关闭 UI Toolkit 窗口，存在批量按钮且没有 IMGUI 主窗口。 |
+| PASS | 新项目再次启动，生成的 Enemy/Card/Rarity C# 实际编译；从 Unity TextAsset 经通用 Runtime 读取器还原三表，各 3 行，Enemy 1001 为哥布林、maxHealth=120、moveSpeed=3.5、isBoss=false。退出码 0。 |
+| PASS | 在 `.utmp/u` 运行 7 项发行保护检查：已有目标、Assets 输出、`..` 穿越、工程外绝对路径均被拒绝；两个包的字节保持一致，未生成额外包或临时包，退出码 0。 |
+| PASS | 使用说明本地链接、实际按钮名称、示例坐标与实现核对；许可与第三方通知副本一致，新增资产具备 `.meta`，`git diff --check` 通过。功能核心、Excel 源表、既有生成物、场景、manifest 和 ProjectSettings 无修改。 |
+| NOT RUN | 本次未重跑第三阶段 110 项 Test Runner 或 Player 构建；本次主要验证新增打包器和实际安装包，历史测试结果见上节，不能算作本次执行。 |
+| NOT RUN | 可见导入对话框和鼠标操作、截图制作、跨版本升级及非 Windows/IL2CPP 验证。用户后续截图和人工使用反馈仍需补充。 |
+
+本次功能检查无遗留 FAIL。Unity 日志存在云服务连接超时/退出时 Curl 提示，各验证进程仍退出 0，未发现脚本编译失败；不将其表述为“日志完全无警告”。包摘要、清单、导表及读取结果汇总在 [发行验证记录](TestResults/Release-1.0.0-Verification.json)。原始日志和临时验证入口位于 `.utmp/ReleaseValidation/`，不进入安装包。
+
+可复现的命令：打包使用 `-batchmode -nographics -quit -projectPath <副本> -executeMethod ExcelDataTool.Editor.Distribution.ExcelDataToolPackageExporter.ExportBatch`；安装使用 `-batchmode -nographics -quit -projectPath <新项目> -importPackage <包路径>`。临时测试入口为 `CleanProjectExport.Run`、`FinalImportValidation.Run`、`ExcelDataTool.ReleaseValidation.PackageSafetyValidation.Run`，各自写入证据后退出。原编辑器未关闭，业务资产未修改。
+
+### 人工验收与发布（四步）
+
+1. 按 README 从 Excel 规则读到导出流程，确认策划能找到对应按钮；按截图清单提供五张真实图片，后续插入 README。
+2. 在练习项目按安装说明先安装官方 JSON，再导入本地工具包和可选模板包，打开窗口并批量导出。已有业务源表时不要用模板覆盖。
+3. 审查 MIT 版权署名、文档和源码差异，自行提交；保持 `.meta`，不要提交 Library、`.utmp` 或 Releases 二进制目录。
+4. 在 GitHub 创建指向对应源码的 `v1.0.0` Release，上传 `Releases/1.0.0/` 下的四个文件，并粘贴发布说明。当前没有任何远程发布操作。
+
+限制：安装包仍需使用者预先安装官方 JSON 依赖；没有 UPM 自动依赖安装功能。用户尚未提供截图，因此当前交付为完整文字手册和截图接入位置。首版包不代表已验证其他 Unity 小版本、平台或自定义项目升级。

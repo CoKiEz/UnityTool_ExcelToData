@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-10",
+  "status": "PASS",
+  "release": "1.0.0",
+  "unity": "6000.3.17f1",
+  "platform": "Windows",
+  "sourceBaseCommit": "0b1e5acfafeac3a5cfd521c7e7ab903026ba48cf",
+  "sourceState": "基于上述提交的未提交文档及发行工具改动；没有自动 commit/tag/push/release",
+  "cleanProject": ".utmp/p4",
+  "cleanProjectCreation": "Unity -createProject；初始 Assets 为空",
+  "installation": "官方 JSON 3.2.2 通过 Package Manager 解析；两个包均由 Unity -importPackage 实际导入",
+  "packages": [
+    {
+      "file": "ExcelDataTool-1.0.0.unitypackage",
+      "bytes": 44715,
+      "sha256": "3848751206239da116f2991312a85926809da725cd585bd5396a1ca600c71689",
+      "assets": [
+        "Assets/ExcelDataTool/Documentation/LICENSE.txt",
+        "Assets/ExcelDataTool/Documentation/README.md",
+        "Assets/ExcelDataTool/Documentation/ThirdPartyNotices.md",
+        "Assets/ExcelDataTool/Editor/Core/BatchExportService.cs",
+        "Assets/ExcelDataTool/Editor/Core/TableExportResult.cs",
+        "Assets/ExcelDataTool/Editor/Core/TableExporter.cs",
+        "Assets/ExcelDataTool/Editor/Core/TableValidator.cs",
+        "Assets/ExcelDataTool/Editor/Core/WorkbookModels.cs",
+        "Assets/ExcelDataTool/Editor/Core/WorkbookScanner.cs",
+        "Assets/ExcelDataTool/Editor/Core/XlsxWorkbookReader.cs",
+        "Assets/ExcelDataTool/Editor/ExcelDataTool.Editor.asmdef",
+        "Assets/ExcelDataTool/Editor/UI/ExcelDataToolWindow.cs",
+        "Assets/ExcelDataTool/Editor/UI/ExcelDataToolWindowSettings.cs",
+        "Assets/ExcelDataTool/Editor/UI/TablePreviewData.cs",
+        "Assets/ExcelDataTool/Editor/UI/TablePreviewView.cs",
+        "Assets/ExcelDataTool/Runtime/ExcelDataTool.Runtime.asmdef",
+        "Assets/ExcelDataTool/Runtime/JsonTableLoader.cs"
+      ],
+      "folders": []
+    },
+    {
+      "file": "ExcelDataTool-Templates-1.0.0.unitypackage",
+      "bytes": 14592,
+      "sha256": "ddecd321319d083a612a57cfe6141b6e64382b18db3fad68719966f04816c092",
+      "assets": [
+        "Assets/ExcelDataTool/Documentation/LICENSE.txt",
+        "Assets/GameData/Excel/Card.xlsx",
+        "Assets/GameData/Excel/Enemy.xlsx"
+      ],
+      "folders": []
+    }
+  ],
+  "importedAssetsMatchSource": true,
+  "exportSmoke": {
+    "passed": true,
+    "SuccessCount": 3,
+    "WrittenCount": 9,
+    "repeatWritten": 0,
+    "repeatSkipped": 9,
+    "toolkitWindow": true
+  },
+  "typedTextAssetRead": {
+    "passed": true,
+    "unity": "6000.3.17f1",
+    "enemyRows": 3,
+    "cardRows": 3,
+    "rarityRows": 3,
+    "id": 1001,
+    "name": "哥布林",
+    "maxHealth": 120,
+    "moveSpeed": 3.5,
+    "isBoss": false,
+    "source": "实际 unitypackage 导入后生成的 C# 和 JSON TextAsset"
+  },
+  "packageSafety": {
+    "status": "PASS",
+    "projectRoot": ".utmp/u",
+    "checks": [
+      "PASS：已有两个目标时拒绝覆盖；IOException：目标已存在，已阻止覆盖。请使用新的发行目录或先自行处理旧文件：<workspace>\\.utmp\\u\\Releases\\1.0.0\\ExcelDataTool-1.0.0.unitypackage",
+      "PASS：拒绝 Assets 输出目录；ArgumentException：发行包只能写入当前工程的 Releases 目录。\r\nParameter name: directory",
+      "PASS：拒绝 .. 路径穿越；ArgumentException：发行输出目录不能包含 . 或 .. 路径段。\r\nParameter name: directory",
+      "PASS：拒绝绝对工程外目录；ArgumentException：发行包只能写入当前工程的 Releases 目录。\r\nParameter name: directory",
+      "PASS：已有包字节保持一致：ExcelDataTool-1.0.0.unitypackage",
+      "PASS：已有包字节保持一致：ExcelDataTool-Templates-1.0.0.unitypackage",
+      "PASS：没有生成额外发行包或临时包"
+    ],
+    "packagePaths": [
+      ".utmp/u/Releases/1.0.0/ExcelDataTool-1.0.0.unitypackage",
+      ".utmp/u/Releases/1.0.0/ExcelDataTool-Templates-1.0.0.unitypackage"
+    ],
+    "beforeSha256": [
+      "3848751206239da116f2991312a85926809da725cd585bd5396a1ca600c71689",
+      "ddecd321319d083a612a57cfe6141b6e64382b18db3fad68719966f04816c092"
+    ],
+    "afterSha256": [
+      "3848751206239da116f2991312a85926809da725cd585bd5396a1ca600c71689",
+      "ddecd321319d083a612a57cfe6141b6e64382b18db3fad68719966f04816c092"
+    ],
+    "error": ""
+  },
+  "licenseCopiesMatch": true,
+  "localDocumentationLinksChecked": 41,
+  "assetMetadataPresent": true,
+  "existingBusinessAssetsUnchanged": true,
+  "gitDiffCheck": "PASS",
+  "logs": [
+    {
+      "file": ".utmp/ReleaseValidation/CreateProject.log",
+      "sha256": "1283f236b054f952309c243aec4047f4f9c79ef7c96d35e42fbc49cc42ebeb31",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/Export.log",
+      "sha256": "cc4807df828181fba1adede40f6025a92eb8c059d831a38cb2ad23a9587c48e9",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/ImportTool.log",
+      "sha256": "4868cc0ae2c9073bcf59cc589da26dba9d4e33336b1c96b2399d86c7b552db65",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/ImportTemplates.log",
+      "sha256": "0f4a0243944922cd2faf0d14e2418921f5f010f390ff1b5db6e011b56c3727c9",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/ExportTables.log",
+      "sha256": "cace48725333269cf32fbf9b52e0806857f7beafcba302709943d347340e590e",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/PackageSafety.log",
+      "sha256": "5b4e30291571990be57be9a4cf280b7dd23d85238d292de4b14a882bfbbdfaf9",
+      "observedProcessExitCode": 0
+    },
+    {
+      "file": ".utmp/ReleaseValidation/FinalImport.log",
+      "sha256": "fee7a57b0fade4acb012d48d61830bd7f0e6aa16fd156d7f3fe79b168c93c3dd",
+      "observedProcessExitCode": 0
+    }
+  ],
+  "environmentNotes": [
+    "日志包含 Unity 云服务超时及退出时 Curl 提示；各进程退出码 0，没有脚本编译失败。"
+  ],
+  "notRun": [
+    "本次全量 Test Runner（第三阶段 110/110 为历史结果）",
+    "本次 Player 构建及运行",
+    "可见导入界面和鼠标操作",
+    "跨版本升级",
+    "其他 Unity 小版本、非 Windows、IL2CPP",
+    "截图制作（等待真实图片）"
+  ],
+  "publishedToGitHub": false
+}

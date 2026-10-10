@@ -71,4 +71,6 @@ Excel 读取器是本项目维护的受限 OOXML 只读实现，使用 Unity 所
 
 ## 本项目代码
 
-本仓库目前没有为自有工具代码声明独立开源许可证。上述 MIT、Unity Companion License 和 Unity Package Distribution License 只适用于相应组件，不能据此认定整个 `UnityTool_ExcelToData` 仓库采用其中任何一种许可证。
+本项目自有代码、文档和示例模板采用 **MIT License**，Copyright (c) 2026 CoKiEz，完整条款见仓库根目录 `LICENSE`。该授权由项目维护者选择。
+
+本项目的 MIT 授权不替代 Unity 官方包或第三方组件的许可。上述 Unity Companion License、Unity Package Distribution License 及各组件 MIT 继续适用于对应部分。正式工具包仅附依赖说明，不重新分发 Newtonsoft/NUnit DLL；依赖由使用者通过 Unity Package Manager 安装。
